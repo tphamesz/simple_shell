@@ -5,6 +5,7 @@
  * @ac: The number of parameters passed to the executable file
  * @av: The name of the program.
  *
+ * In the case where the variable fails
  * Return: Always 0.
  */
 int main(__attribute__((unused)) int ac, char **av)
