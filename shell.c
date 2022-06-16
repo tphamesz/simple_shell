@@ -15,7 +15,9 @@ int main(__attribute__((unused)) int ac, char **av)
 	int command_counter;
 
 	command_counter = 0;
+
 	signal(SIGINT, SIG_IGN);
+
 	do {
 		command_counter++;
 		line = NULL;
@@ -23,6 +25,5 @@ int main(__attribute__((unused)) int ac, char **av)
 		parse_line(line, size, command_counter, av);
 
 	} while (1);
-
 	return (0);
 }
