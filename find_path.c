@@ -20,23 +20,21 @@ char *path_finder(char *command)
 	path_tokens = tokenize_path(index, str);
 	if (path_tokens == NULL)
 		return (NULL);
-
 	directory = search_directories(path_tokens, command);
 	if (directory == NULL)
 	{
 		double_free(path_tokens);
-		return (NULL);
+			return (NULL);
 	}
 
 	constructed = build_path(directory, command);
 	if (constructed == NULL)
 	{
 		double_free(path_tokens);
-		return (NULL);
+			return (NULL);
 	}
 
 	double_free(path_tokens);
-
 	return (constructed);
 }
 /**
@@ -91,7 +89,6 @@ char **tokenize_path(int index, char *str)
 	path_tokens = token_interface(env_var, delim, token_count);
 	if (path_tokens == NULL)
 		return (NULL);
-
 	return (path_tokens);
 }
 
