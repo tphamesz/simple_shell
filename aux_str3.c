@@ -1,4 +1,4 @@
-nclude "new.h"
+#include "new.h"
 
 /**
  * rev_string - reverses a string.
