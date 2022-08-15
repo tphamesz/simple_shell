@@ -1,5 +1,5 @@
-#ifndef NEW
-#define NEW
+#ifndef _NEW
+#define _NEW
 
 #include <stdio.h>
 #include <unistd.h>
